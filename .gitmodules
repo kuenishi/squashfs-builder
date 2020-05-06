@@ -1,3 +1,0 @@
-[submodule "squashfs-tools"]
-	path = squashfs-tools
-	url = git@github.com:plougher/squashfs-tools.git
