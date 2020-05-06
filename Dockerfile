@@ -32,4 +32,5 @@ RUN apt-get update -y && apt install -y --no-install-recommends \
 COPY --from=builder /usr/local/src/squashfs-tools/squashfs-tools/mksquashfs /usr/local/bin/
 COPY --from=builder /usr/local/src/squashfs-tools/squashfs-tools/unsquashfs /usr/local/bin/
 
-ENTRYPOINT ["/usr/local/bin/mksquashfs"]
+RUN mkdir -p /workdir
+WORKDIR /workdir
